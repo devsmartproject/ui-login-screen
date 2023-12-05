@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login | UI - UX</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="login__ui">
+        
+        <div class="login__header">
+          <div class="login__header-logo">
+            <ion-icon name="diamond-outline"></ion-icon>
+            <span class="login__header-logo-title">Comunidad DevTalles</span>
+          </div>
+          <button class="login_header-link">Soporte</button>
+        </div>
+
+        <div class="login__content">
+          <form action="#" class="login__form">
+            <div class="login__form-titles">
+              <h1>Crear una cuenta.</h1>
+              <span>Puedes iniciar sesión en tu cuenta</span>
+            </div>
+            <div class="login__input">
+              <label for="name">Tu nombre</label>
+              <input
+                type="text"
+                placeholder="Ingresa tu nombre."
+                id="name"
+                name="name"
+                autocomplete="off"
+              />
+              <ion-icon name="person-outline"></ion-icon>
+            </div>
+
+            <div class="login__input">
+              <label for="mail">Tu email</label>
+              <input
+                type="email"
+                placeholder="Ingresa tu email.."
+                id="mail"
+                name="mail"
+                autocomplete="off"
+              />
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="login__input">
+              <label for="password">Tu password</label>
+              <input
+                type="password"
+                placeholder="Ingresa tu nombre.."
+                id="password"
+                name="password"
+                maxlength="6"
+              />
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+
+            <button class="login__button" type="submit">
+              <span>Crear una cuenta</span>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </form>
+          
+        </div>
+       
+      </section>
+      <section class="login__bg">
+        <!-- Seccion para colocar tu fondo de pantalla -->
+      </section>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

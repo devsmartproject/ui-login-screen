@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Inspiracion */
+/* https://x.com/umutcneyriyer/status/1731619081931915565?s=20 */
+/* Elaborado por Pedro Diaz Guarniz */
+
+:root {
+  /* Button */
+  --color-bg-button-dark: #1b1a1f;
+  --color-bg-button-light: #fefefe;
+
+  /* Text */
+  --color-text-title: #0f0e11;
+  --color-text-subtitle: #42444e;
+  --color-text-placeholder: #9b9ead;
+
+  /* border */
+  --color-border: #f5f4f7;
+
+  /* background */
+  --color-bg: #f5f4f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #eceff4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1024px;
+  height: 680px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 16px;
+  column-gap: 16px;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.045);
+  grid-template-areas: "login bg";
+}
+
+.login__ui {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 1fr;
+  grid-area: login;
+}
+
+.login__header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.login__header-logo-title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--color-text-title);
+}
+
+.login_header-link {
+  background-color: var(--color-bg-button-light);
+  border-radius: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-title);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login_header-link:hover {
+  background-color: var(--color-bg-button-dark);
+  color: var(--color-bg-button-light);
+}
+
+.login__content {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__form {
+  width: 75%;
+  height: 80%;
+}
+
+.login__form h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-title);
+}
+
+.login__form span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-subtitle);
+}
+
+.login__form-titles {
+  margin-bottom: 48px;
+}
+
+.login__input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.login__input label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-subtitle);
+  margin-bottom: 4px;
+}
+
+.login__input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  padding: 0 40px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-placeholder);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.login__input input:focus {
+  outline: none;
+}
+
+.login__input ion-icon {
+  position: absolute;
+  top: 68%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--color-text-placeholder);
+}
+
+.login__form button {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--color-bg-button-dark);
+  border: 1px solid var(--color-border);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 32px;
+}
+
+.login__button span {
+  color: #fff;
+}
+
+.login__button ion-icon {
+  font-size: 16px;
+  color: #fff;
+}
+
+.login__bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-area: bg;
+}
+
+
+@media (width < 860px){
+  .container{
+    width: 80%;
+    min-width: 390px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "login";
+  }
+
+  .login__bg{
+    display: none;
+  }
+
+}
