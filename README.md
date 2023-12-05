@@ -4,7 +4,7 @@ Componente UI para cargar imagenes 🚀
 
 Componente UI para cargar imagenes construido con REACT y TailwindCSS para el proyecto de la materia de Desarrollo de Aplicaciones Web.
 
-1. Abri HTML
+1. Abrir index.html en el navegador
 
 ## Carpeta img
 
